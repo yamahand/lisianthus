@@ -14,7 +14,7 @@ project "lisianthus"
     files { "include/**.h", "src/**.cpp", "include/**.inl", "src/**.inl" }
     pchheader "stdafx.h"
     pchsource "src/stdafx.cpp"
-    includedirs { "include" }
+    includedirs { "include/lisianthus" }
 
     filter { "configurations:Debug" }
     defines { "DEBUG" }
@@ -30,7 +30,7 @@ project "example"
     language "C++"
     files { "example/**.h", "example/**.cpp", "example/**.inl" }
     links { "lisianthus" }
-    includedirs { "include" }
+    includedirs { "include/lisianthus" }
 
     filter { "configurations:Debug" }
     defines { "DEBUG" }

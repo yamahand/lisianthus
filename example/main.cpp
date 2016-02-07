@@ -15,11 +15,9 @@ int main(int argc, char* argv[]) {
 
     OutPut("hello world!");
 
-    printf("%d, %d", size, size32);
+    printf("%zd, %d", size, size32);
 
     getchar();
-
-    std::int_fast16_t fast16;
 
     return 0;
 }
